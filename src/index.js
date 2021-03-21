@@ -13,10 +13,10 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 //http logger
-app.use(morgan('combined'))
+  app.use(morgan('combined'))
 
 //templates engine
-app.engine('hbs', handlebars({
+  app.engine('hbs', handlebars({
   extname: '.hbs'
 }));
 
