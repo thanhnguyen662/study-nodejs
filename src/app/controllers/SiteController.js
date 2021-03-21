@@ -1,14 +1,15 @@
-class NewsController{
+const Course = require('../models/Course');
 
+class NewsController {
     //[GET] /home
-    index(req, res){
-        res.render('home');
+    index(req, res) {
+        //res.render('home');
     }
 
     //[GET] /search
-    search(req, res){
+    search(req, res) {
         res.render('search');
     }
 }
 
-module.exports = new NewsController();  
+module.exports = new NewsController();
