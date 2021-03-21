@@ -7,16 +7,15 @@ const app = express();
 const port = 3000;
 
 const route = require('./routes')
-
-  app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 //http logger
-  app.use(morgan('combined'))
+app.use(morgan('combined'))
 
 //templates engine
-  app.engine('hbs', handlebars({
+app.engine('hbs', handlebars({
   extname: '.hbs'
 }));
 
