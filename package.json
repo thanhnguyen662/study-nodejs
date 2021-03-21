@@ -28,9 +28,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint-staged"
     }
   },
+  
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
